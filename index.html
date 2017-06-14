@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorGame</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>The Great
+    <br>
+    <span id="colorDisplay">RGB</span>
+    <br>
+    Color Game</h1>
+    <div id="stripe">
+      <button id="audioButton">Sound:<span id="ON">ON</span></button>
+      <button id="reset">New Colors</button>
+      <span id="message"></span>
+      <button class="mode">Easy</button>
+      <button class="mode selected">Medium</button>
+      <button class="mode">Hard</button>
+      <button id="help">Help</button>
+    </div>
+    <div id="container">
+      <p id="info">
+        Select the square that matches the RGB color value above.
+        RGB color values range from 0 to 255 to describe
+        the amount of Red, Green and Blue.<br><br>
+        For example: RGB (0, 191, 255) is mainly displayed as a
+        <span id="skyblue">deep sky blue</span>
+        because the color does not contain red (0), but has a high amount of green (191)
+        and the highest amount of blue (255).
+      </p>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+
+      <audio class="audio" id="squareSound" type="audio/mp3" src="audio/ping.mp3"></audio>
+
+      <audio class="audio"  id="levelWin"  type="audio/wav"  src="audio/levelWin.wav"></audio>
+
+      <!---closes container -->
+    </div>
+    <script type="text/javascript" src="myscript.js"></script>
+  </body>
+  </html>
